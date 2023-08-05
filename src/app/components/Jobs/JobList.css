@@ -1,0 +1,40 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background color */
+  html, body {
+    height: 100%;
+  }
+  
+  #registration-page {
+    height: 100%;
+    background: #78a7ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Form container styles */
+  .signup-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Media query for desktop view */
+  @media screen and (min-width: 768px) {
+    #registration-page {
+      justify-content: space-between;
+    }
+  
+    .signup-form {
+      width: calc(50% - 10px);
+    }
+  }
+  
